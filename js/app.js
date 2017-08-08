@@ -107,13 +107,21 @@ appModule.config(function($routeProvider,$locationProvider) {
     controller: 'HomeController',
     templateUrl: 'partials/home.html'
   })
-  .when("/store/", { // Store information page
-    controller: 'StoreController',
-    templateUrl: 'partials/store.html'
-  })
-  .when("/change-location", { // change store
+  .when("/services", { // services information page
     controller: 'HomeController',
-    templateUrl: 'partials/change-location.html'
+    templateUrl: 'partials/services.html'
+  })
+  .when("/testimonials", { // testimonials information page
+    controller: 'HomeController',
+    templateUrl: 'partials/testimonials.html'
+  })
+  .when("/faq", { // faq information page
+    controller: 'HomeController',
+    templateUrl: 'partials/faq.html'
+  })
+  .when("/contact", { // contact information page
+    controller: 'HomeController',
+    templateUrl: 'partials/contact.html'
   })
   .otherwise({redirectTo: "/"});
 })
