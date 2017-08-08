@@ -41,6 +41,34 @@ appModule.factory('dataFactory', ['$http',
     // init the factory object to be returned
     var dataFactory = {};
 
+    // Carousel information
+    var carousel = [
+      {"source" : "images/wedding.png",
+       "captionTop" : "Your Event, Your Way",
+       "captionBottom" : "Flexible services for your wedding, bridal shower, baby shower, or any other event"},
+      {"source" : "images/planning.png",
+       "captionTop" : "Your Coordinator, Your Day",
+       "captionBottom" : "With you before, during, and after your special event"},
+      {"source" : "images/shower.png",
+       "captionTop" : "Your Needs, Your Say",
+       "captionBottom" : "Professional services tailored to your specific needs"},
+      {"source" : "images/planning.png",
+       "captionTop" : "Make Your Day",
+       "captionBottom" : "Here to ask for a witty tagline"},
+    ];
+
+    dataFactory.getCarouselStart = function() {
+      return carousel[0];
+    }
+
+    dataFactory.getCarousel = function() {
+      var carouselWithoutFirst = [];
+      for (var i=1; i <carousel.length; i++) {
+        carouselWithoutFirst.push(carousel[i]);
+      }
+      return carouselWithoutFirst;
+    }
+
     // Finally, return the factory object
     return dataFactory;
   }
@@ -55,12 +83,16 @@ appModule.controller('HomeController', ['$scope', '$location', 'dataFactory',
     // $scope.goToStore = function() {
     //   window.location =  "#/store";
     // };
-    //
-    // $scope.locations = dataFactory.getLocations();
-    //
-    // $scope.setCurrentCity = function(parentIndex, index) {
-    //   dataFactory.setCurrentCity(parentIndex, index);
-    // }
+
+    $scope.carousel = dataFactory.getCarousel();
+
+    $scope.carouselStart = dataFactory.getCarouselStart();
+
+    // Set the carousel interval to 5.5 seconds
+    $('.carousel').carousel({
+      interval: 5500,
+      pause: "none"
+    });
 
   }
 ]);

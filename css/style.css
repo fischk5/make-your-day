@@ -40,11 +40,12 @@ body {
 #navigation a {
   text-decoration: none;
   list-style: none;
-  color: #79A431;
-  font-size: 1.5em;
+  color: #808080;
+  font-size: 1.2em;
   margin-bottom: 20px;
   letter-spacing: .1em;
   font-weight: bolder;
+  font-family: 'Quicksand', sans-serif;
 }
 
 #navigation a:hover {
@@ -58,6 +59,50 @@ body {
 
 .item img {
   width: 100%;
+}
+
+.carousel-caption {
+  background-color: rgba(100,100,100,0.7);
+  border-radius: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-caption h3 {
+  font-size: 2em;
+  margin: 5px 0;
+  font-family: 'Sacramento', cursive;
+}
+
+.carousel-caption p {
+  letter-spacing: .1em;
+  font-size: .9em;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Home content */
+
+.home-content {
+  font-family: 'Quicksand', sans-serif;
+  margin: 15px;
+}
+
+.home-description {
+  background-color: rgba(255,255,255,1);
+  border-radius: 10px;
+  padding: 5px 20px 20px 20px;
+  text-align: center;
+  color: #808080;
+}
+
+.home-description h2 {
+  border-bottom: 1px #808080 solid;
+}
+
+.home-description h2 span {
+  color: #3179a4;
+  font-family: 'Sacramento', cursive;
+  font-size: 2em;
 }
 
 /* Main */
