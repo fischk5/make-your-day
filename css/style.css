@@ -1,0 +1,69 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Sidebar */
+.sidebar {
+  padding: 0 20px;
+  width: 250px;
+  margin: 0;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+.sidebar-logo {
+  background: url(../images/logo.png) no-repeat center;
+  background-size: contain;
+  width: 100%;
+  height: 250px;
+}
+
+/* Sidebar Navigation */
+#navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+#navigation a {
+  text-decoration: none;
+  list-style: none;
+  color: #79A431;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  letter-spacing: .1em;
+  font-weight: bolder;
+}
+
+#navigation a:hover {
+  color: #3179a4;
+}
+
+/* Carousel */
+#featuredCarousel {
+  width: 100%;
+}
+
+.item img {
+  width: 100%;
+}
+
+/* Main */
+.main {
+  margin-right: 250px;
+  width: calc(100%-250px);
+  height: 100vh;
+  background: #79A431;
+}
