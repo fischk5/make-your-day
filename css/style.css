@@ -130,12 +130,14 @@ body {
   border-style: solid;
   padding: 10px 55px;
   border-radius: 10px;
+  transition: 0.3s;
 }
 
 .content-navigation-container a:hover {
-  background-color: rgba(100,100,100,.2);
+  background-color: rgba(100,100,100,.1);
   text-decoration: none;
   color: #3179a4;
+  box-shadow: 0 8px 16px 0 rgba(100,100,100,0.7);
 }
 
 /* Main */
