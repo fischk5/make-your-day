@@ -90,7 +90,7 @@ appModule.controller('HomeController', ['$scope', '$location', 'dataFactory',
 
     // Set the carousel interval to 5.5 seconds
     $('.carousel').carousel({
-      interval: 5500,
+      interval: 9500,
       pause: "none"
     });
 
