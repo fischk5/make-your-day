@@ -190,7 +190,8 @@ body {
 }
 
 .service-title {
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .service-title h2 {
@@ -240,8 +241,8 @@ body {
   margin: 0;
   text-decoration: none;
   color: #79A431;
-  font-size: 1em;
-  text-transform: uppercase;
+  font-size: 1.5em;
+  font-family: 'Sacramento', cursive;
 }
 
 .service-contact a {
