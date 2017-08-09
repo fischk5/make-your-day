@@ -148,9 +148,10 @@ body {
 }
 
 /*
------ Testimonials -----
+----- Services, Testimonials, FAQ, and Contact -----
 */
 
+#services,
 #testimonials {
   padding-left: 150px;
   padding-right: 150px;
@@ -160,6 +161,7 @@ body {
   font-family: 'Quicksand', sans-serif;
 }
 
+#services h1,
 #testimonials h1 {
   font-family: 'Sacramento', cursive;
   font-size: 4em;
@@ -167,14 +169,101 @@ body {
   text-align: center;
 }
 
+#services h3,
 #testimonials h3 {
   font-size: 1.2em;
   text-align: center;
 }
 
-#testimonials hr {
-  border-top: 1px solid #79A431;
+/*
+----- Services -----
+*/
+
+#services hr {
+  border-top: 1px dashed #79A431;
 }
+
+.service-container {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+.service-title {
+  padding: 20px;
+}
+
+.service-title h2 {
+  text-align: center;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.service-image {
+  height: 200px;
+  margin: 0 auto;
+  max-width: 800px;
+  border-radius: 20px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#service-wedding {
+  background-image: url(../images/services/service_wedding.png);
+}
+
+#service-baby {
+  background-image: url(../images/services/service_baby.png);
+}
+
+#service-birthday {
+  background-image: url(../images/services/service_birthday.png);
+}
+
+.service-description {
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.85;
+}
+
+.service-contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-contact a,
+.service-contact h3 {
+  margin: 0;
+  text-decoration: none;
+  color: #79A431;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+.service-contact a {
+  box-shadow: 0 4px 8px 0 rgba(100,100,100,0.7);
+  background-color: rgba(255,255,255,1);
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px 55px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.service-contact a:hover {
+  background-color: rgba(100,100,100,.1);
+  text-decoration: none;
+  color: #3179a4;
+  box-shadow: 0 8px 16px 0 rgba(100,100,100,0.7);
+}
+
+/*
+----- Testimonials -----
+*/
 
 .testimony-container {
   display: flex;
