@@ -144,6 +144,74 @@ body {
 .main {
   margin-right: 250px;
   width: calc(100% - 250px);
-  height: 100vh;
   color: #79A431;
+}
+
+/*
+----- Testimonials -----
+*/
+
+#testimonials {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 40px;
+  padding-top: 0;
+  min-width: 650px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#testimonials h1 {
+  font-family: 'Sacramento', cursive;
+  font-size: 4em;
+  width: 100%;
+  text-align: center;
+}
+
+#testimonials h3 {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#testimonials hr {
+  border-top: 1px solid #79A431;
+}
+
+.testimony-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-top: 1px dashed #79A431;
+}
+
+.testimony-container img {
+  min-height: 200px;
+  max-height: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  background-size: contain;
+  margin-right: 10px;
+}
+
+.testimony-description {
+  flex-basis: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimony-description h4 {
+  letter-spacing: .1em;
+}
+
+.testimony-description h4 span {
+  color: #3179a4;
+  font-style: italic;
+  font-size: .8em;
+}
+
+.testimony-container p {
+  line-height: 1.85;
+}
+
+#testimonials .content-navigation-container {
+  margin-top: 40px;
 }

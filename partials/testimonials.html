@@ -1,3 +1,18 @@
-<div>
-  Testimonials
+<div id="testimonials">
+  <h1>Testimonials</h1>
+  <h3>We've forged strong memories with people we love to serve.  Their testimonies remind us why we love doing what we do.</h3>
+
+  <div class="testimony-container" ng-repeat="testimony in testimonials">
+    <img ng-src="{{testimony.picture}}">
+    <div class="testimony-description">
+      <h4>{{testimony.name}}<span>     {{testimony.location}}</span></h4>
+      <p ng-repeat="text in testimony.review">{{text}}</p>
+    </div>
+  </div>
+
+  <div class="content-navigation-container">
+    <a href="#/faq"><h3>What's Next?</h3></a>
+  </div>
+
+
 </div>
