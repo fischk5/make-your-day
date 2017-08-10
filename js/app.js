@@ -95,6 +95,36 @@ appModule.factory('dataFactory', ['$http',
       return testimonials;
     }
 
+    // Wedding package data
+    var weddingPackages = [
+      {"description" : "Consulting with Full Coordination",
+       "price" : "$860",
+       "services" : ["Unlimited phone & email communication from date of contract.",
+                      "Meet in person 1 or 2 times before the event.",
+                      "Two (2) Hours to attend and help coordinate Rehearsal.",
+                      "Twelve (12) hours the day of the wedding, addtional hours will be billed at $40/Hr.",
+                      "Detailed and individual service based on your needs for the day.",
+                      "Anything else you might need :)"]
+      },
+      {"description" : "Consulting with Partial Coordination",
+       "price" : "$250",
+       "services" : ["Unlimited phone & email communication from date of contract.",
+                      "Meet in person 1 or 2 times before the event.",
+                      "Help coordinate timeline and execution of rehearsal, ceremony, and reception.",
+                      "Detailed and individual service based on your needs for the day.",
+                      "First seven hours included in price.  Additional hours billed at $40/hour."]
+      },
+      {"description" : "Consulting Only",
+       "price" : "$40/hour",
+       "services" : ["Unlimited phone & email communication from date of contract.",
+                      "Meet in person prior to the event."]
+      }
+     ];
+
+     dataFactory.getWeddingPackages = function() {
+       return weddingPackages;
+     }
+
     // Finally, return the factory object
     return dataFactory;
   }
@@ -132,6 +162,33 @@ appModule.controller('TestimonyController', ['$scope', '$location', 'dataFactory
   }
 ]);
 
+// Initialize the wedding controller
+appModule.controller('WeddingController', ['$scope', '$location', 'dataFactory',
+  function($scope, $location, dataFactory) {
+
+    $scope.weddingPackages = dataFactory.getWeddingPackages();
+
+    // Code for form control
+    $(function() {
+      $('input').on('change', function() {
+        var input = $(this);
+        if (input.val().length) {
+          input.addClass('populated');
+        } else {
+          input.removeClass('populated');
+        }
+      });
+
+      // setTimeout(function() {
+      //   $('#fname').trigger('focus');
+      // }, 500);
+    });
+
+    // End code for form control
+
+  }
+]);
+
 /*  -----SETUP ANGULAR ROUTING----- */
 
 // Configure the routes available to the module
@@ -155,7 +212,7 @@ appModule.config(function($routeProvider,$locationProvider) {
     templateUrl: 'partials/faq.html'
   })
   .when("/services/wedding", { // wedding inquiry page
-    controller: 'HomeController',
+    controller: 'WeddingController',
     templateUrl: 'partials/services/wedding.html'
   })
   .otherwise({redirectTo: "/"});

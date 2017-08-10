@@ -1,9 +1,47 @@
 <div id="wedding">
 
-  <!-- Pricing Tiers -->
-  
-  <!-- Incidentals -->
+  <!-- Page Header -->
+  <h1>Weddings</h1>
+  <h3>I am here for the person who wants full responsibility for planning their own wedding, but could still use a
+    helping hand on the wedding day and possibly the rehearsal, to ensure that your vision becomes a reality.</h3>
+  <hr>
 
+  <!-- Pricing Tiers -->
+  <h2 class="section-head">Service Packages</h2>
+
+  <div class="flexx">
+
+    <div class="package-container" ng-repeat="package in weddingPackages">
+      <div class="package-title">{{package.description}}</div>
+      <div>
+        <div class="package-description">
+          <ul>
+            <li ng-repeat="service in package.services">{{service}}</li>
+          </ul>
+        </div>
+    </div>
+      <div>
+        <div class="package-description package-price">{{package.price}}</div>
+      </div>
+    </div>
+
+</div>
   <!-- Form -->
+  <h2 class="section-head">Request Information</h2>
+  <h3>Fill out the form and I will contact you within 24 to 48 hours to see how I can help with your event</h3>
+
+  <form class="wedding-form" action="index.html" method="post">
+    <label>
+    <input id="fname" type="text" placeholder="Name">
+    <span>Name</span>
+  </label>
+
+  <label>
+    <input type="email" placeholder="Email">
+    <span>Email</span>
+  </label>
+
+  <input type="submit" value="Send">
+  </form>
 
 </div>
