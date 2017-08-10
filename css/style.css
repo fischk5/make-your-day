@@ -152,7 +152,8 @@ body {
 */
 
 #services,
-#testimonials {
+#testimonials,
+#contact {
   padding-left: 150px;
   padding-right: 150px;
   padding-bottom: 40px;
@@ -162,7 +163,8 @@ body {
 }
 
 #services h1,
-#testimonials h1 {
+#testimonials h1,
+#contact h1 {
   font-family: 'Sacramento', cursive;
   font-size: 4em;
   width: 100%;
@@ -170,7 +172,8 @@ body {
 }
 
 #services h3,
-#testimonials h3 {
+#testimonials h3,
+#contact h3 {
   font-size: 1.2em;
   text-align: center;
 }
@@ -242,7 +245,7 @@ body {
   text-decoration: none;
   color: #79A431;
   font-size: 1.5em;
-  font-family: 'Sacramento', cursive;
+  
 }
 
 .service-contact a {

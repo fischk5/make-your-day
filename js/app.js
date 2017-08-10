@@ -54,9 +54,11 @@ appModule.factory('dataFactory', ['$http',
        "captionBottom" : "Professional services tailored to your specific needs"},
       {"source" : "images/planning.png",
        "captionTop" : "Make Your Day",
-       "captionBottom" : "Here to ask for a witty tagline"},
+       "captionBottom" : "Your vision becomes a reality"},
     ];
 
+    // Mission Statement - to customize my services to meet your needs - that's how I can make your day great
+    // Find new pictures for carousel
     dataFactory.getCarouselStart = function() {
       return carousel[0];
     }
