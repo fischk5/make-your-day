@@ -136,8 +136,9 @@ body {
   margin: 0;
   text-decoration: none;
   color: #79A431;
-  font-family: 'BlackJack';
-  font-size: 1.5em;
+  font-family: 'Covered', sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.2em;
 }
 
 .content-navigation-container a {
@@ -262,6 +263,8 @@ body {
   text-decoration: none;
   color: #79A431;
   font-size: 1.5em;
+  font-family: 'Covered', sans-serif;
+  letter-spacing: 2px;
 
 }
 

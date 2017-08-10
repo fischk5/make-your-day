@@ -43,6 +43,9 @@ appModule.factory('dataFactory', ['$http',
 
     // Carousel information
     var carousel = [
+      {"source" : "images/planning.png",
+       "captionTop" : "Make Your Day",
+       "captionBottom" : "Your vision becomes a reality"},
       {"source" : "images/wedding.png",
        "captionTop" : "Your Event, Your Way",
        "captionBottom" : "Flexible services for your wedding, bridal shower, baby shower, or any other event"},
@@ -51,10 +54,7 @@ appModule.factory('dataFactory', ['$http',
        "captionBottom" : "With you before, during, and after your special event"},
       {"source" : "images/shower.png",
        "captionTop" : "Your Needs, Your Say",
-       "captionBottom" : "Professional services tailored to your specific needs"},
-      {"source" : "images/planning.png",
-       "captionTop" : "Make Your Day",
-       "captionBottom" : "Your vision becomes a reality"},
+       "captionBottom" : "Professional services tailored to your specific needs"}
     ];
 
     // Mission Statement - to customize my services to meet your needs - that's how I can make your day great
