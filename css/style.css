@@ -1,3 +1,19 @@
+/*Fonting*/
+@font-face {
+  font-family: 'BlackJack';
+  src: url(../res/fonts/BLACKJAR.TTF) format('truetype');
+}
+
+@font-face {
+  font-family: 'Covered';
+  src: url(../res/fonts/CoveredByYourGrace.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Footlight';
+  src: url(../res/fonts/footlight.ttf) format('truetype');
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -43,9 +59,9 @@ body {
   color: #808080;
   font-size: 1.2em;
   margin-bottom: 20px;
-  letter-spacing: .1em;
+  letter-spacing: 4px;
   font-weight: bolder;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Covered', sans-serif;
 }
 
 #navigation a:hover {
@@ -73,19 +89,20 @@ body {
 .carousel-caption h3 {
   font-size: 2em;
   margin: 5px 0;
-  font-family: 'Sacramento', cursive;
+  letter-spacing: 3px;
+  font-family: 'Covered', sans-serif;
 }
 
 .carousel-caption p {
   letter-spacing: .1em;
   font-size: .9em;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Footlight', sans-serif;
 }
 
 /* Home content */
 
 .home-content {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Footlight', sans-serif;
   margin: 15px;
 }
 
@@ -103,7 +120,7 @@ body {
 
 .home-description h2 span {
   color: #79A431;
-  font-family: 'Sacramento', cursive;
+  font-family: 'BlackJack';
   font-size: 2em;
 }
 
@@ -119,7 +136,7 @@ body {
   margin: 0;
   text-decoration: none;
   color: #79A431;
-  font-family: 'Sacramento', cursive;
+  font-family: 'BlackJack';
   font-size: 1.5em;
 }
 
@@ -159,13 +176,13 @@ body {
   padding-bottom: 40px;
   padding-top: 0;
   min-width: 650px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Footlight', sans-serif;
 }
 
 #services h1,
 #testimonials h1,
 #contact h1 {
-  font-family: 'Sacramento', cursive;
+  font-family: 'Blackjack';
   font-size: 4em;
   width: 100%;
   text-align: center;
@@ -245,7 +262,7 @@ body {
   text-decoration: none;
   color: #79A431;
   font-size: 1.5em;
-  
+
 }
 
 .service-contact a {
