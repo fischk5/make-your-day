@@ -154,9 +154,9 @@ appModule.config(function($routeProvider,$locationProvider) {
     controller: 'HomeController',
     templateUrl: 'partials/faq.html'
   })
-  .when("/contact", { // contact information page
+  .when("/services/wedding", { // wedding inquiry page
     controller: 'HomeController',
-    templateUrl: 'partials/contact.html'
+    templateUrl: 'partials/services/wedding.html'
   })
   .otherwise({redirectTo: "/"});
 })

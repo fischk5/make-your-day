@@ -246,8 +246,17 @@ body {
 
 .service-description {
   max-width: 800px;
+  font-size: 1.1em;
   margin: 20px auto;
   line-height: 1.85;
+}
+
+.service-description h4 {
+  text-align: left;
+  font-size: 1.4em;
+  font-family: 'Covered';
+  letter-spacing: 3px;
+  margin-top: 30px;
 }
 
 .service-contact {
