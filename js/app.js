@@ -20,6 +20,12 @@ Written by Kevin Fischer
 //////////////////////////////////////////
 */
 
+/* ----- Non-AngularJS code ----- */
+// Navigate to home on click of the logo
+function goHome() {
+  window.location =  "#/";
+}
+
 /* -----SETUP ANGULAR MODULE----- */
 
 // Initialize the module with dependency ngRoute
@@ -84,11 +90,11 @@ appModule.factory('dataFactory', ['$http',
     {"picture" : "images/testimonials/client_three.png",
      "name" : "Jack B.",
      "location" : "Los Angeles, California",
-     "review" : ["Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer est diam, lobortis vel eros in, molestie feugiat odio. Aliquam sed elementum justo. Sed vel suscipit ex, rutrum sagittis metus. Donec euismod massa nunc, at tempus velit aliquam ut. Aliquam placerat ante vel erat lacinia eleifend. Praesent facilisis eros non mi commodo auctor. Phasellus orci enim, iaculis et eleifend a, rutrum eget sem. Suspendisse facilisis facilisis eros, ut sodales tellus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos."]},
+     "review" : ["We had an incredible day.  Linda and her staff are second to none, and they were quietly making this day amazing."]},
      {"picture" : "images/testimonials/client_four.png",
       "name" : "Kevin F.",
       "location" : "New York, New York",
-      "review" : ["Mauris feugiat purus nibh. Proin vestibulum tellus ipsum, eu maximus felis dignissim non. Integer sit amet lorem orci. Vestibulum et posuere ligula. In condimentum mauris nec lacus varius interdum. Donec pulvinar sit amet augue ac viverra. Fusce id libero a sem scelerisque semper. Duis fermentum, tortor eu gravida suscipit, massa tortor sagittis est, eu vulputate eros metus nec magna. Nam convallis aliquam massa, vel blandit massa aliquam id. Morbi sed mauris libero. Donec efficitur nec eros vitae ultricies. Nam mollis ullamcorper nibh, eget viverra turpis lacinia in. Cras auctor et urna eu fringilla. Nunc venenatis, lorem ac malesuada pulvinar, mauris nisl interdum neque, a vulputate enim augue eu erat.  Ut venenatis eget erat ac mattis. Proin at maximus tortor, finibus finibus odio. Duis fringilla faucibus pulvinar. Pellentesque lobortis enim orci, eget feugiat libero venenatis at. Integer porttitor, arcu in feugiat ultrices, ipsum metus luctus ipsum, non sollicitud in tortor tortor eget turpis.", "Quisque mattis massa in neque sodales, sit amet placerat nibh iaculis. Donec pulvinar vitae tellus non bibendum. Duis viverra massa a vestibulum cursus. Fusce in mollis urna, non malesuada nunc. Aenean et pellentesque velit. Integer vitae elit ligula. Fusce consectetur ante at enim posuere, vitae malesuada massa sagittis. Praesent at arcu lorem. Donec ultrices quis libero non pharetra."]}
+      "review" : ["There is nothing this team didn't think of.  I am impressed by Linda's charisma, service, and wisdom.  Without her many years of experience, our party would have been weird and quiet.", "I hate the quiet."]}
     ];
 
     dataFactory.getTestimonials = function() {
@@ -121,8 +127,104 @@ appModule.factory('dataFactory', ['$http',
       }
      ];
 
+     // Shower package data
+     var showerPackages = [
+       {"description" : "Consulting, Plan, and Execute",
+        "price" : "$600",
+        "services" : ["Unlimited phone & email communication from date of contract.",
+                       "Meet in person 1 or 2 times before the event.",
+                       "Plan entire event, from nuts to bolts",
+                       "Transfering gifts as needed throughout the event time",
+                       "Six (6) hours the day of the wedding, addtional hours will be billed at $40/Hr.",
+                       "Detailed and individual service based on your needs for the day.",
+                       "Anything else you might need :)"]
+       },
+       {"description" : "Consulting and Plan",
+        "price" : "$400",
+        "services" : ["Unlimited phone & email communication from date of contract.",
+                       "Meet in person 1 or 2 times before the event.",
+                       "Plan entire event, from nuts to bolts",
+                       "Transfering gifts as needed throughout the event time",
+                       "Six (6) hours the day of the wedding, addtional hours will be billed at $40/Hr.",
+                       "Detailed and individual service based on your needs for the day.",
+                       "Anything else you might need :)"]
+       },
+       {"description" : "Consulting with Full Coordination",
+        "price" : "$200",
+        "services" : ["Unlimited phone & email communication from date of contract.",
+                       "Meet in person 1 or 2 times before the event.",
+                       "Six (6) hours the day of the wedding, addtional hours will be billed at $40/Hr.",
+                       "Detailed and individual service based on your needs for the day.",
+                       "Anything else you might need :)"]
+       },
+       {"description" : "Consulting with Partial Coordination",
+        "price" : "$80",
+        "services" : ["Unlimited phone & email communication from date of contract.",
+                       "Meet in person 1 or 2 times before the event.",
+                       "Detailed and individual service based on your needs for the day.",
+                       "First hour hours included in price.  Additional hours billed at $30/hour."]
+       },
+       {"description" : "Consulting Only",
+        "price" : "$30/hour",
+        "services" : ["Unlimited phone & email communication from date of contract.",
+                       "Meet in person prior to the event."]
+       }
+      ];
+
+     // Party package data
+     var partyPackages = [
+       {"description" : "Consulting, Plan, and Execute",
+        "price" : "$600",
+        "services" : ["Unlimited phone & email communication from date of contract.",
+                       "Meet in person 1 or 2 times before the event.",
+                       "Plan entire event, from nuts to bolts",
+                       "Transfering gifts as needed throughout the event time",
+                       "Six (6) hours the day of the wedding, addtional hours will be billed at $40/Hr.",
+                       "Detailed and individual service based on your needs for the day.",
+                       "Anything else you might need :)"]
+       },
+       {"description" : "Consulting and Plan",
+        "price" : "$400",
+        "services" : ["Unlimited phone & email communication from date of contract.",
+                       "Meet in person 1 or 2 times before the event.",
+                       "Plan entire event, from nuts to bolts",
+                       "Transfering gifts as needed throughout the event time",
+                       "Six (6) hours the day of the wedding, addtional hours will be billed at $40/Hr.",
+                       "Detailed and individual service based on your needs for the day.",
+                       "Anything else you might need :)"]
+       },
+       {"description" : "Consulting with Full Coordination",
+        "price" : "$200",
+        "services" : ["Unlimited phone & email communication from date of contract.",
+                       "Meet in person 1 or 2 times before the event.",
+                       "Six (6) hours the day of the wedding, addtional hours will be billed at $40/Hr.",
+                       "Detailed and individual service based on your needs for the day.",
+                       "Anything else you might need :)"]
+       },
+       {"description" : "Consulting with Partial Coordination",
+        "price" : "$80",
+        "services" : ["Unlimited phone & email communication from date of contract.",
+                       "Meet in person 1 or 2 times before the event.",
+                       "Detailed and individual service based on your needs for the day.",
+                       "First hour hours included in price.  Additional hours billed at $30/hour."]
+       },
+       {"description" : "Consulting Only",
+        "price" : "$30/hour",
+        "services" : ["Unlimited phone & email communication from date of contract.",
+                       "Meet in person prior to the event."]
+       }
+      ];
+
      dataFactory.getWeddingPackages = function() {
        return weddingPackages;
+     }
+
+     dataFactory.getShowerPackages = function() {
+       return showerPackages;
+     }
+
+     dataFactory.getPartyPackages = function() {
+       return partyPackages;
      }
 
     // Finally, return the factory object
@@ -162,11 +264,13 @@ appModule.controller('TestimonyController', ['$scope', '$location', 'dataFactory
   }
 ]);
 
-// Initialize the wedding controller
-appModule.controller('WeddingController', ['$scope', '$location', 'dataFactory',
+// Initialize the controller used for the events
+appModule.controller('EventController', ['$scope', '$location', 'dataFactory',
   function($scope, $location, dataFactory) {
 
     $scope.weddingPackages = dataFactory.getWeddingPackages();
+    $scope.showerPackages = dataFactory.getShowerPackages();
+    $scope.partyPackages = dataFactory.getPartyPackages();
 
     // Code for form control
     $(function() {
@@ -212,8 +316,16 @@ appModule.config(function($routeProvider,$locationProvider) {
     templateUrl: 'partials/faq.html'
   })
   .when("/services/wedding", { // wedding inquiry page
-    controller: 'WeddingController',
+    controller: 'EventController',
     templateUrl: 'partials/services/wedding.html'
+  })
+  .when("/services/shower", { // shower inquiry page
+    controller: 'EventController',
+    templateUrl: 'partials/services/shower.html'
+  })
+  .when("/services/birthday", { // birthday inquiry page
+    controller: 'EventController',
+    templateUrl: 'partials/services/birthday.html'
   })
   .otherwise({redirectTo: "/"});
 })

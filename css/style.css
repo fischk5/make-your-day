@@ -44,6 +44,10 @@ body {
   height: 250px;
 }
 
+.sidebar-logo:hover {
+  cursor: pointer;
+}
+
 /* Sidebar Navigation */
 #navigation {
   display: flex;

@@ -1,7 +1,7 @@
 <div id="wedding">
 
   <!-- Page Header -->
-  <h1>Weddings</h1>
+  <h1>Birthday Parties</h1>
   <h3>I am here for the person who wants full responsibility for planning their own wedding, but could still use a
     helping hand on the wedding day and possibly the rehearsal, to ensure that your vision becomes a reality.</h3>
   <hr>
@@ -11,7 +11,7 @@
 
   <div class="flexx">
 
-    <div class="package-container" ng-repeat="package in weddingPackages">
+    <div class="package-container" ng-repeat="package in partyPackages">
       <div class="package-title">{{package.description}}</div>
       <div>
         <div class="package-description">
@@ -31,32 +31,16 @@
   <h3>Fill out the form and I will contact you within 24 to 48 hours to see how I can help with your event</h3>
 
   <form class="wedding-form" action="index.html" method="post">
-    <!-- Name -->
     <label>
       <input id="fname" type="text" placeholder="Name">
       <span>Name</span>
     </label>
-    <!-- Phone Number -->
-    <label>
-      <input type="tel" placeholder="Phone Number">
-      <span>Phone Number</span>
-    </label>
-    <!-- Email -->
+
     <label>
       <input type="email" placeholder="Email">
       <span>Email</span>
     </label>
-    <!-- Event Date -->
-    <label>
-      <input type="date" placeholder="Event Date">
-      <span>Event Date</span>
-    </label>
-    <!-- Optional Message -->
-    <label>
-      <input type="text" placeholder="Message (optional)">
-      <span>Message (optional)</span>
-    </label>
-    <!-- Submit Button -->
+
     <input type="submit" value="Send">
   </form>
 
