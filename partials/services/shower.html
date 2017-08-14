@@ -30,17 +30,32 @@
   <h2 class="section-head">Request Information</h2>
   <h3>Fill out the form and I will contact you within 24 to 48 hours to see how I can help with your event</h3>
 
-  <form class="wedding-form" action="index.html" method="post">
+  <form class="wedding-form" action="mailto:fischk5@hotmail.com" method="post" enctype="text/plain">
+    <!-- Name -->
     <label>
       <input id="fname" type="text" placeholder="Name">
       <span>Name</span>
     </label>
-
+    <!-- Phone Number -->
+    <label>
+      <input type="tel" placeholder="Phone Number">
+      <span>Phone Number</span>
+    </label>
+    <!-- Email -->
     <label>
       <input type="email" placeholder="Email">
       <span>Email</span>
     </label>
-
+    <!-- Event Date -->
+    <label>
+      <input type="date" placeholder="Event Date">
+      <span>Event Date</span>
+    </label>
+    <!-- Optional Message -->
+    <label>
+    <textarea rows="5" placeholder="Message (optional)"></textarea>
+  </label>
+    <!-- Submit Button -->
     <input type="submit" value="Send">
   </form>
 
